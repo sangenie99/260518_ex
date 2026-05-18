@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <img src="https://picsum.photos/400/200" /> -->
+    <h1>Sign up</h1>
+    <!-- 기본적인 인풋 -->
+    <h2>그냥 인풋</h2>
+    <input />
+    <button>check</button>
+    <!--  -->
+    <form>
+      <!-- form으로 묶으면 하위 Input에서 enter 치면 제출 처리(혹은 버튼 누르면) -->
+      <!-- Input에  name을 안 붙여주면 주소창을 통해 전달 X -->
+      <label>Username: <input name="username" /> <br /> </label>
+
+      <input name="password" />
+      <input
+        name="password"
+        id="password"
+        type="password"
+        placeholder="password"
+      />
+      <!-- 큰 text input; 여러줄
+       보통은 게시판할때 사용가능 -->
+      <textarea name="long_text"></textarea>
+      <input type="radio" name="gender" value="male" />
+      <input type="radio" name="gender" value="female" />
+      <select name="city">
+        <option>서울</option>
+        <option>부산</option>
+        <option>울산</option>
+      </select>
+      <input type="checkbox" name="hobby" vlaue="1" /> 취미
+      <input type="checkbox" name="hobby" vlaue="2" /> 취미2
+      <button>check</button>
+    </form>
+  </body>
+</html>
